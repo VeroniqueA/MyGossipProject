@@ -1,0 +1,8 @@
+<h1 class="font-weight-bold">Bienvenue dans le monde des gossips !</h1>
+
+<h2 class="font-weight-light">Les derniers potins :</h2>
+
+<% @gossip_array.each do |one_gossip| %><br> 
+<b> <a href="/gossip/<%= one_gossip.id  %>"><%= one_gossip.title  %> </a> </b> <br>
+<%= one_gossip.content  %> <br>
+<% end %>
